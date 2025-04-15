@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <!-- Background Shield -->
+  <path d="M40 5 L60 15 L60 35 L40 45 L20 35 L20 15 Z" fill="#1e293b" stroke="#00ffea" stroke-width="2" />
+  
+  <!-- Letter K -->
+  <path d="M30 15 L30 35 M30 25 L40 15 M30 25 L40 35" stroke="#00ffea" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  
+  <!-- Company Name -->
+  <text x="70" y="33" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#ffffff">KOGABE</text>
+  
+  <!-- Tagline -->
+  <text x="70" y="45" font-family="Arial, sans-serif" font-size="10" fill="#00ffea">SECURITY</text>
+  
+  <!-- Digital Circuit Lines -->
+  <path d="M15 25 L20 25 M60 25 L65 25 M40 5 L40 2 M40 45 L40 48" stroke="#00ffea" stroke-width="1" stroke-linecap="round" />
+  
+  <!-- Binary dots -->
+  <circle cx="15" cy="25" r="1" fill="#00ffea" />
+  <circle cx="65" cy="25" r="1" fill="#00ffea" />
+  <circle cx="40" cy="2" r="1" fill="#00ffea" />
+  <circle cx="40" cy="48" r="1" fill="#00ffea" />
+</svg>

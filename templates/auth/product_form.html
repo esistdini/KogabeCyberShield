@@ -1,0 +1,112 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section class="bg-dark-900 py-6 border-b border-gray-800">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+            <div>
+                <h1 class="text-2xl md:text-3xl font-bold">{{ 'Edit' if product else 'New' }} <span class="text-primary-400">Product</span></h1>
+                <p class="text-gray-400">{{ 'Update existing' if product else 'Create a new' }} product</p>
+            </div>
+            <div class="mt-4 md:mt-0">
+                <a href="{{ url_for('product_management') }}" class="bg-dark-800 hover:bg-dark-700 text-gray-300 px-4 py-2 rounded-md text-sm font-medium flex items-center transition-colors">
+                    <i class="fas fa-arrow-left mr-2"></i> Back to Products
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-8 bg-dark-800 min-h-screen">
+    <div class="container mx-auto px-4">
+        <!-- Form Container -->
+        <div class="max-w-3xl mx-auto">
+            <div class="bg-dark-900 rounded-lg p-6">
+                <form method="POST" class="space-y-6">
+                    {{ form.csrf_token }}
+
+                    <!-- Title -->
+                    <div>
+                        <label for="title" class="block text-sm font-medium text-gray-300 mb-2">Title</label>
+                        {{ form.title(class="w-full bg-dark-800 border border-gray-700 rounded-md py-2 px-3 text-gray-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent") }}
+                        {% if form.title.errors %}
+                            {% for error in form.title.errors %}
+                                <p class="text-red-400 text-sm mt-1">{{ error }}</p>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+
+                    <!-- Meta Description -->
+                    <div>
+                        <label for="meta_description" class="block text-sm font-medium text-gray-300 mb-2">Meta Description</label>
+                        {{ form.meta_description(class="w-full bg-dark-800 border border-gray-700 rounded-md py-2 px-3 text-gray-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent", rows="2") }}
+                        {% if form.meta_description.errors %}
+                            {% for error in form.meta_description.errors %}
+                                <p class="text-red-400 text-sm mt-1">{{ error }}</p>
+                            {% endfor %}
+                        {% endif %}
+                        <p class="text-gray-500 text-sm mt-1">{{ form.meta_description.description }}</p>
+                    </div>
+
+                    <!-- Content -->
+                    <div>
+                        <label for="content" class="block text-sm font-medium text-gray-300 mb-2">Content</label>
+                        {{ form.content(class="w-full bg-dark-800 border border-gray-700 rounded-md py-2 px-3 text-gray-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent", rows="10") }}
+                        {% if form.content.errors %}
+                            {% for error in form.content.errors %}
+                                <p class="text-red-400 text-sm mt-1">{{ error }}</p>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+
+                    <!-- Key Features -->
+                    <div>
+                        <label for="key_features" class="block text-sm font-medium text-gray-300 mb-2">Key Features</label>
+                        {{ form.key_features(class="w-full bg-dark-800 border border-gray-700 rounded-md py-2 px-3 text-gray-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent", rows="5") }}
+                        {% if form.key_features.errors %}
+                            {% for error in form.key_features.errors %}
+                                <p class="text-red-400 text-sm mt-1">{{ error }}</p>
+                            {% endfor %}
+                        {% endif %}
+                        <p class="text-gray-500 text-sm mt-1">{{ form.key_features.description }}</p>
+                    </div>
+
+                    <!-- Technical Specifications -->
+                    <div>
+                        <label for="technical_specs" class="block text-sm font-medium text-gray-300 mb-2">Technical Specifications</label>
+                        {{ form.technical_specs(class="w-full bg-dark-800 border border-gray-700 rounded-md py-2 px-3 text-gray-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent", rows="5") }}
+                        {% if form.technical_specs.errors %}
+                            {% for error in form.technical_specs.errors %}
+                                <p class="text-red-400 text-sm mt-1">{{ error }}</p>
+                            {% endfor %}
+                        {% endif %}
+                        <p class="text-gray-500 text-sm mt-1">{{ form.technical_specs.description }}</p>
+                    </div>
+
+                    <!-- Tags -->
+                    <div>
+                        <label for="tags" class="block text-sm font-medium text-gray-300 mb-2">Tags (comma-separated)</label>
+                        {{ form.tags(class="w-full bg-dark-800 border border-gray-700 rounded-md py-2 px-3 text-gray-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent") }}
+                        {% if form.tags.errors %}
+                            {% for error in form.tags.errors %}
+                                <p class="text-red-400 text-sm mt-1">{{ error }}</p>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+
+                    <!-- Published Status -->
+                    <div class="flex items-center">
+                        {{ form.published(class="bg-dark-800 border border-gray-700 rounded mr-2") }}
+                        <label for="published" class="text-sm font-medium text-gray-300">Published</label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="flex justify-end">
+                        {{ form.submit(class="bg-primary-500 hover:bg-primary-600 text-dark-900 font-bold py-2 px-6 rounded-md transition-colors") }}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

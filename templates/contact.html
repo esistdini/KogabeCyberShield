@@ -1,0 +1,236 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<!-- Contact Header -->
+<section class="py-16 bg-dark-900">
+    <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">Contact <span class="text-primary-400">Us</span></h1>
+        <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+            Get in touch with our team to discuss your cyber security needs and how we can help protect your digital assets.
+        </p>
+    </div>
+</section>
+
+<!-- Contact Information and Form -->
+<section class="py-16 bg-dark-800">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Contact Information -->
+            <div class="reveal">
+                <h2 class="text-2xl font-bold mb-6">Contact <span class="text-primary-400">Information</span></h2>
+                
+                <div class="space-y-8">
+                    <!-- Address -->
+                    <div class="flex items-start">
+                        <div class="bg-primary-400 bg-opacity-10 p-4 rounded-full mr-4">
+                            <i class="fas fa-map-marker-alt text-primary-400"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">Our Office</h3>
+                            <p class="text-gray-400">
+                                C3, Peacock nagar,<br>
+                                Viraganoor, Madurai,<br>
+                                Tamil Nadu, India
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Email -->
+                    <div class="flex items-start">
+                        <div class="bg-primary-400 bg-opacity-10 p-4 rounded-full mr-4">
+                            <i class="fas fa-envelope text-primary-400"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">Email</h3>
+                            <p class="text-gray-400">
+                                <a href="mailto:kogabemanagement@gmail.com" class="hover:text-primary-400 transition-colors">kogabemanagement@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Phone -->
+                    <div class="flex items-start">
+                        <div class="bg-primary-400 bg-opacity-10 p-4 rounded-full mr-4">
+                            <i class="fas fa-phone-alt text-primary-400"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">Phone</h3>
+                            <p class="text-gray-400">
+                                <a href="tel:+919566925817" class="hover:text-primary-400 transition-colors">+91-9566925817</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Working Hours -->
+                    <div class="flex items-start">
+                        <div class="bg-primary-400 bg-opacity-10 p-4 rounded-full mr-4">
+                            <i class="fas fa-clock text-primary-400"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">Working Hours</h3>
+                            <p class="text-gray-400">
+                                Monday - Friday: 9:00 AM - 6:00 PM<br>
+                                Saturday: 10:00 AM - 2:00 PM<br>
+                                Sunday: Closed
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Social Media -->
+                <div class="mt-12">
+                    <h3 class="text-lg font-semibold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-dark-700 hover:bg-primary-400 text-white hover:text-dark-900 w-10 h-10 rounded-full flex items-center justify-center transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="bg-dark-700 hover:bg-primary-400 text-white hover:text-dark-900 w-10 h-10 rounded-full flex items-center justify-center transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-dark-700 hover:bg-primary-400 text-white hover:text-dark-900 w-10 h-10 rounded-full flex items-center justify-center transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-dark-700 hover:bg-primary-400 text-white hover:text-dark-900 w-10 h-10 rounded-full flex items-center justify-center transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Form -->
+            <div class="bg-dark-900 p-8 rounded-lg reveal">
+                <h2 class="text-2xl font-bold mb-6">Send Us a <span class="text-primary-400">Message</span></h2>
+                
+                <form action="{{ url_for('contact') }}" method="POST" class="space-y-6 contact-form">
+                    {{ form.hidden_tag() }}
+                    
+                    <div>
+                        <label for="name" class="block mb-2 text-sm font-medium">Full Name <span class="text-red-500">*</span></label>
+                        {{ form.name(class="w-full bg-dark-700 border border-gray-700 rounded-md py-3 px-4 text-white focus:outline-none focus:border-primary-400 form-input", placeholder="Your name") }}
+                        {% if form.name.errors %}
+                            {% for error in form.name.errors %}
+                                <p class="text-red-500 text-xs mt-1">{{ error }}</p>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block mb-2 text-sm font-medium">Email Address <span class="text-red-500">*</span></label>
+                        {{ form.email(class="w-full bg-dark-700 border border-gray-700 rounded-md py-3 px-4 text-white focus:outline-none focus:border-primary-400 form-input", placeholder="Your email") }}
+                        {% if form.email.errors %}
+                            {% for error in form.email.errors %}
+                                <p class="text-red-500 text-xs mt-1">{{ error }}</p>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                    
+                    <div>
+                        <label for="phone" class="block mb-2 text-sm font-medium">Phone Number (Optional)</label>
+                        {{ form.phone(class="w-full bg-dark-700 border border-gray-700 rounded-md py-3 px-4 text-white focus:outline-none focus:border-primary-400 form-input", placeholder="Your phone number") }}
+                        {% if form.phone.errors %}
+                            {% for error in form.phone.errors %}
+                                <p class="text-red-500 text-xs mt-1">{{ error }}</p>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block mb-2 text-sm font-medium">Message <span class="text-red-500">*</span></label>
+                        {{ form.message(class="w-full bg-dark-700 border border-gray-700 rounded-md py-3 px-4 text-white focus:outline-none focus:border-primary-400 form-input", rows=5, placeholder="Your message") }}
+                        {% if form.message.errors %}
+                            {% for error in form.message.errors %}
+                                <p class="text-red-500 text-xs mt-1">{{ error }}</p>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                    
+                    {{ form.submit(class="bg-primary-500 hover:bg-primary-600 text-dark-900 font-bold py-3 px-6 rounded-md transition-colors shadow-lg hover:shadow-xl w-full") }}
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Location Map Section -->
+<section class="py-16 bg-dark-900">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-4">Our <span class="text-primary-400">Location</span></h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">
+                Visit our office in Madurai, Tamil Nadu to discuss your cyber security needs in person.
+            </p>
+        </div>
+        
+        <div class="bg-dark-800 p-4 rounded-lg">
+            <div class="aspect-w-16 aspect-h-9 bg-gray-800 rounded-lg flex items-center justify-center">
+                <div class="text-center p-8">
+                    <i class="fas fa-map-marked-alt text-5xl text-primary-400 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Kogabe Headquarters</h3>
+                    <p class="text-gray-400">
+                        C3, Peacock nagar, Viraganoor,<br>
+                        Madurai, Tamil Nadu, India
+                    </p>
+                    <a href="https://maps.google.com/?q=Viraganoor,Madurai,Tamil+Nadu" target="_blank" class="inline-block mt-4 text-primary-400 hover:text-primary-300">
+                        <i class="fas fa-external-link-alt mr-1"></i> View on Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-16 bg-dark-800">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-4">Frequently Asked <span class="text-primary-400">Questions</span></h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">
+                Find quick answers to common questions about our services and how we can help you.
+            </p>
+        </div>
+        
+        <div class="max-w-3xl mx-auto">
+            <div class="space-y-6">
+                <!-- FAQ Item 1 -->
+                <div class="bg-dark-900 rounded-lg p-6 reveal">
+                    <h3 class="text-lg font-semibold mb-3">What services does Kogabe offer?</h3>
+                    <p class="text-gray-400">
+                        Kogabe offers a comprehensive range of cyber security services including web application penetration testing, network security testing, phishing awareness and training, and vulnerability assessments. Visit our Services page for more detailed information.
+                    </p>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="bg-dark-900 rounded-lg p-6 reveal">
+                    <h3 class="text-lg font-semibold mb-3">How quickly can you respond to a security incident?</h3>
+                    <p class="text-gray-400">
+                        We understand the urgency of security incidents and strive to provide rapid response. For our clients with support agreements, we offer 24/7 incident response with guaranteed response times based on severity.
+                    </p>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="bg-dark-900 rounded-lg p-6 reveal">
+                    <h3 class="text-lg font-semibold mb-3">Do you offer customized security solutions?</h3>
+                    <p class="text-gray-400">
+                        Yes, we understand that every organization has unique security needs. We work closely with our clients to develop and implement customized security solutions that address their specific challenges and align with their business goals.
+                    </p>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="bg-dark-900 rounded-lg p-6 reveal">
+                    <h3 class="text-lg font-semibold mb-3">How can I request a quote for your services?</h3>
+                    <p class="text-gray-400">
+                        You can request a quote by filling out our contact form, sending us an email at kogabemanagement@gmail.com, or calling us at +91-9566925817. We'll discuss your needs and provide a detailed proposal.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-gray-400 mb-4">Have more questions? Get in touch with our team.</p>
+                <a href="mailto:kogabemanagement@gmail.com" class="text-primary-400 hover:text-primary-300 font-medium">
+                    <i class="fas fa-envelope mr-2"></i> kogabemanagement@gmail.com
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

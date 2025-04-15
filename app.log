@@ -1,0 +1,564 @@
+2025-04-15 10:51:53,205 - root - INFO - Database tables created successfully
+2025-04-15 10:51:53,419 - werkzeug - WARNING -  * Debugger is active!
+2025-04-15 10:51:53,421 - werkzeug - INFO -  * Debugger PIN: 186-195-141
+2025-04-15 10:52:19,262 - werkzeug - INFO - 10.83.10.17 - - [15/Apr/2025 10:52:19] "GET /product/2 HTTP/1.1" 200 -
+2025-04-15 10:52:19,621 - werkzeug - INFO - 10.83.3.74 - - [15/Apr/2025 10:52:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-15 10:52:19,897 - werkzeug - INFO - 10.83.10.17 - - [15/Apr/2025 10:52:19] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-04-15 10:52:22,927 - root - INFO - Database tables created successfully
+2025-04-15 10:52:23,134 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.128.172:5000
+2025-04-15 10:52:23,135 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-15 10:52:23,136 - werkzeug - INFO -  * Restarting with stat
+2025-04-15 10:52:24,519 - root - INFO - Database tables created successfully
+2025-04-15 10:52:24,736 - werkzeug - WARNING -  * Debugger is active!
+2025-04-15 10:52:24,738 - werkzeug - INFO -  * Debugger PIN: 144-057-264
+2025-04-15 10:52:24,839 - werkzeug - INFO - 10.83.5.159 - - [15/Apr/2025 10:52:24] "GET / HTTP/1.1" 200 -
+2025-04-15 10:52:25,466 - werkzeug - INFO - 10.83.9.165 - - [15/Apr/2025 10:52:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-15 10:52:25,636 - werkzeug - INFO - 10.83.5.159 - - [15/Apr/2025 10:52:25] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-04-15 10:53:12,964 - werkzeug - INFO - 10.83.10.17 - - [15/Apr/2025 10:53:12] "GET /blog/ HTTP/1.1" 200 -
+2025-04-15 10:53:13,322 - werkzeug - INFO - 10.83.3.74 - - [15/Apr/2025 10:53:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-15 10:53:13,568 - werkzeug - INFO - 10.83.10.17 - - [15/Apr/2025 10:53:13] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-04-15 10:53:15,100 - werkzeug - INFO - 10.83.10.17 - - [15/Apr/2025 10:53:15] "GET /blog/111 HTTP/1.1" 200 -
+2025-04-15 10:53:15,462 - werkzeug - INFO - 10.83.3.74 - - [15/Apr/2025 10:53:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-15 10:53:15,742 - werkzeug - INFO - 10.83.10.17 - - [15/Apr/2025 10:53:15] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-04-15 10:53:33,044 - werkzeug - INFO - 10.83.10.17 - - [15/Apr/2025 10:53:33] "GET /auth/products HTTP/1.1" 200 -
+2025-04-15 10:53:33,401 - werkzeug - INFO - 10.83.3.74 - - [15/Apr/2025 10:53:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-15 10:53:33,637 - werkzeug - INFO - 10.83.10.17 - - [15/Apr/2025 10:53:33] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-04-15 10:53:37,747 - werkzeug - INFO - 10.83.10.17 - - [15/Apr/2025 10:53:37] "GET /auth/dashboard HTTP/1.1" 200 -
+2025-04-15 10:53:38,138 - werkzeug - INFO - 10.83.3.74 - - [15/Apr/2025 10:53:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-15 10:53:38,417 - werkzeug - INFO - 10.83.10.17 - - [15/Apr/2025 10:53:38] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-04-15 10:53:38,436 - werkzeug - INFO - 10.83.3.74 - - [15/Apr/2025 10:53:38] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+2025-04-15 10:53:38,932 - werkzeug - INFO - 10.83.3.74 - - [15/Apr/2025 10:53:38] "GET /api/contacts HTTP/1.1" 200 -
+2025-04-15 10:53:39,462 - werkzeug - INFO - 10.83.10.17 - - [15/Apr/2025 10:53:39] "GET /api/contacts HTTP/1.1" 200 -
+2025-04-15 10:53:40,629 - werkzeug - INFO - 10.83.10.17 - - [15/Apr/2025 10:53:40] "GET /blog/111 HTTP/1.1" 200 -
+2025-04-15 10:53:41,002 - werkzeug - INFO - 10.83.3.74 - - [15/Apr/2025 10:53:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-15 10:53:41,292 - werkzeug - INFO - 10.83.10.17 - - [15/Apr/2025 10:53:41] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-04-15 10:54:09,490 - werkzeug - INFO - 10.83.10.17 - - [15/Apr/2025 10:54:09] "GET /api/contacts HTTP/1.1" 200 -
+2025-04-15 10:54:39,509 - werkzeug - INFO - 10.83.10.17 - - [15/Apr/2025 10:54:39] "GET /api/contacts HTTP/1.1" 200 -
+2025-04-15 10:55:09,484 - werkzeug - INFO - 10.83.10.17 - - [15/Apr/2025 10:55:09] "GET /api/contacts HTTP/1.1" 200 -
+2025-04-15 10:55:39,468 - werkzeug - INFO - 10.83.10.17 - - [15/Apr/2025 10:55:39] "GET /api/contacts HTTP/1.1" 200 -
+2025-04-15 10:55:50,419 - werkzeug - INFO -  * Detected change in '/home/runner/workspace/forms.py', reloading
+2025-04-15 10:55:50,507 - werkzeug - INFO -  * Restarting with stat
+2025-04-15 10:55:52,730 - root - INFO - Database tables created successfully
+2025-04-15 10:55:52,948 - werkzeug - WARNING -  * Debugger is active!
+2025-04-15 10:55:52,949 - werkzeug - INFO -  * Debugger PIN: 950-186-587
+2025-04-15 10:56:09,472 - werkzeug - INFO - 10.83.10.17 - - [15/Apr/2025 10:56:09] "GET /api/contacts HTTP/1.1" 200 -
+2025-04-15 10:56:16,573 - root - INFO - Database tables created successfully
+2025-04-15 10:56:16,799 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.128.172:5000
+2025-04-15 10:56:16,800 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-15 10:56:16,801 - werkzeug - INFO -  * Restarting with stat
+2025-04-15 10:56:18,195 - root - INFO - Database tables created successfully
+2025-04-15 10:56:18,402 - werkzeug - WARNING -  * Debugger is active!
+2025-04-15 10:56:18,403 - werkzeug - INFO -  * Debugger PIN: 543-994-655
+2025-04-15 10:56:18,502 - werkzeug - INFO - 10.83.5.159 - - [15/Apr/2025 10:56:18] "GET / HTTP/1.1" 200 -
+2025-04-15 10:56:19,247 - werkzeug - INFO - 10.83.9.165 - - [15/Apr/2025 10:56:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-15 10:56:19,549 - werkzeug - INFO - 10.83.9.165 - - [15/Apr/2025 10:56:19] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-04-15 10:56:39,549 - werkzeug - INFO - 10.83.10.17 - - [15/Apr/2025 10:56:39] "GET /api/contacts HTTP/1.1" 200 -
+2025-04-15 10:57:09,704 - werkzeug - INFO - 10.83.10.17 - - [15/Apr/2025 10:57:09] "GET /api/contacts HTTP/1.1" 200 -
+2025-04-15 10:57:39,486 - werkzeug - INFO - 10.83.10.17 - - [15/Apr/2025 10:57:39] "GET /api/contacts HTTP/1.1" 200 -
+2025-04-15 10:58:09,474 - werkzeug - INFO - 10.83.10.17 - - [15/Apr/2025 10:58:09] "GET /api/contacts HTTP/1.1" 200 -
+2025-04-15 10:58:33,161 - werkzeug - INFO - 10.83.10.17 - - [15/Apr/2025 10:58:33] "GET /auth/dashboard HTTP/1.1" 200 -
+2025-04-15 10:58:33,556 - werkzeug - INFO - 10.83.3.74 - - [15/Apr/2025 10:58:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-15 10:58:33,837 - werkzeug - INFO - 10.83.10.17 - - [15/Apr/2025 10:58:33] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-04-15 10:58:33,859 - werkzeug - INFO - 10.83.3.74 - - [15/Apr/2025 10:58:33] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+2025-04-15 10:58:34,172 - werkzeug - INFO - 10.83.10.17 - - [15/Apr/2025 10:58:34] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+2025-04-15 10:58:34,331 - werkzeug - INFO - 10.83.3.74 - - [15/Apr/2025 10:58:34] "GET /api/contacts HTTP/1.1" 200 -
+2025-04-15 10:58:34,859 - werkzeug - INFO - 10.83.10.17 - - [15/Apr/2025 10:58:34] "GET /api/contacts HTTP/1.1" 200 -
+2025-04-15 10:58:38,013 - werkzeug - INFO - 10.83.10.17 - - [15/Apr/2025 10:58:38] "GET /blog/111 HTTP/1.1" 200 -
+2025-04-15 10:58:38,353 - werkzeug - INFO - 10.83.3.74 - - [15/Apr/2025 10:58:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-15 10:58:38,685 - werkzeug - INFO - 10.83.3.74 - - [15/Apr/2025 10:58:38] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-04-15 10:58:39,123 - werkzeug - INFO - 10.83.3.74 - - [15/Apr/2025 10:58:39] "[36mGET /static/images/favicon.ico HTTP/1.1[0m" 304 -
+2025-04-15 10:58:40,562 - werkzeug - INFO - 10.83.3.74 - - [15/Apr/2025 10:58:40] "GET / HTTP/1.1" 200 -
+2025-04-15 10:58:40,922 - werkzeug - INFO - 10.83.10.17 - - [15/Apr/2025 10:58:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-15 10:58:42,671 - werkzeug - INFO - 10.83.3.74 - - [15/Apr/2025 10:58:42] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-04-15 10:58:43,228 - werkzeug - INFO - 10.83.3.74 - - [15/Apr/2025 10:58:43] "[36mGET /static/images/favicon.ico HTTP/1.1[0m" 304 -
+2025-04-15 10:58:45,129 - werkzeug - INFO - 10.83.3.74 - - [15/Apr/2025 10:58:45] "[35m[1mGET /auth/products HTTP/1.1[0m" 500 -
+2025-04-15 10:58:45,482 - werkzeug - INFO - 172.31.128.172 - - [15/Apr/2025 10:58:45] "[36mGET /auth/products?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-15 10:58:45,539 - werkzeug - INFO - 172.31.128.172 - - [15/Apr/2025 10:58:45] "[36mGET /auth/products?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-15 10:58:46,223 - werkzeug - INFO - 172.31.128.172 - - [15/Apr/2025 10:58:46] "[36mGET /auth/products?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-04-15 10:59:32,048 - werkzeug - INFO - 10.83.3.74 - - [15/Apr/2025 10:59:32] "[35m[1mGET /product/ HTTP/1.1[0m" 500 -
+2025-04-15 10:59:32,466 - werkzeug - INFO - 172.31.128.172 - - [15/Apr/2025 10:59:32] "GET /product/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-15 10:59:32,469 - werkzeug - INFO - 172.31.128.172 - - [15/Apr/2025 10:59:32] "GET /product/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-04-15 10:59:33,057 - werkzeug - INFO - 172.31.128.172 - - [15/Apr/2025 10:59:33] "GET /product/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-04-15 10:59:35,244 - werkzeug - INFO - 10.83.3.74 - - [15/Apr/2025 10:59:35] "[36mGET /static/images/favicon.ico HTTP/1.1[0m" 304 -
+2025-04-15 10:59:36,173 - werkzeug - INFO - 10.83.3.74 - - [15/Apr/2025 10:59:36] "GET /service HTTP/1.1" 200 -
+2025-04-15 10:59:36,573 - werkzeug - INFO - 10.83.10.17 - - [15/Apr/2025 10:59:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-15 10:59:37,089 - werkzeug - INFO - 10.83.3.74 - - [15/Apr/2025 10:59:37] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-04-15 10:59:37,423 - werkzeug - INFO - 10.83.3.74 - - [15/Apr/2025 10:59:37] "[36mGET /static/images/favicon.ico HTTP/1.1[0m" 304 -
+2025-04-15 10:59:39,999 - werkzeug - INFO - 10.83.3.74 - - [15/Apr/2025 10:59:39] "GET /blog/ HTTP/1.1" 200 -
+2025-04-15 10:59:40,582 - werkzeug - INFO - 10.83.10.17 - - [15/Apr/2025 10:59:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-15 10:59:40,847 - werkzeug - INFO - 10.83.3.74 - - [15/Apr/2025 10:59:40] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-04-15 10:59:41,208 - werkzeug - INFO - 10.83.3.74 - - [15/Apr/2025 10:59:41] "[36mGET /static/images/favicon.ico HTTP/1.1[0m" 304 -
+2025-04-15 11:00:01,742 - werkzeug - INFO -  * Detected change in '/home/runner/workspace/models.py', reloading
+2025-04-15 11:00:01,912 - werkzeug - INFO -  * Restarting with stat
+2025-04-15 11:00:04,033 - root - INFO - Database tables created successfully
+2025-04-15 11:00:04,244 - werkzeug - WARNING -  * Debugger is active!
+2025-04-15 11:00:04,246 - werkzeug - INFO -  * Debugger PIN: 130-453-117
+2025-04-15 11:00:12,019 - werkzeug - INFO -  * Detected change in '/home/runner/workspace/forms.py', reloading
+2025-04-15 11:00:12,436 - werkzeug - INFO -  * Restarting with stat
+2025-04-15 11:00:14,286 - root - INFO - Database tables created successfully
+2025-04-15 11:00:14,550 - werkzeug - WARNING -  * Debugger is active!
+2025-04-15 11:00:14,553 - werkzeug - INFO -  * Debugger PIN: 378-736-088
+2025-04-15 11:00:25,625 - werkzeug - INFO - 10.83.3.74 - - [15/Apr/2025 11:00:25] "GET /blog/ HTTP/1.1" 200 -
+2025-04-15 11:00:26,042 - werkzeug - INFO - 10.83.10.17 - - [15/Apr/2025 11:00:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-15 11:00:26,206 - werkzeug - INFO - 10.83.3.74 - - [15/Apr/2025 11:00:26] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-04-15 11:00:26,704 - werkzeug - INFO - 10.83.3.74 - - [15/Apr/2025 11:00:26] "[36mGET /static/images/favicon.ico HTTP/1.1[0m" 304 -
+2025-04-15 11:00:33,709 - root - INFO - Database tables created successfully
+2025-04-15 11:00:33,825 - root - INFO - Database tables created successfully
+2025-04-15 11:00:33,869 - root - INFO - Database tables created successfully
+2025-04-15 11:01:05,132 - app - ERROR - Exception on /auth/products [GET]
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 945, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedColumn: column product.meta_description does not exist
+LINE 1: ...roduct_title, product.content AS product_content, product.me...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/auth.py", line 138, in product_management
+    products = Product.query.order_by(Product.created_at.desc()).all()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2704, in all
+    return self._iter().all()  # type: ignore
+           ^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2858, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/orm/context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1843, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2352, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 945, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column product.meta_description does not exist
+LINE 1: ...roduct_title, product.content AS product_content, product.me...
+                                                             ^
+
+[SQL: SELECT product.id AS product_id, product.title AS product_title, product.content AS product_content, product.meta_description AS product_meta_description, product.key_features AS product_key_features, product.technical_specs AS product_technical_specs, product.published AS product_published, product.created_at AS product_created_at, product.updated_at AS product_updated_at, product.author_id AS product_author_id 
+FROM product ORDER BY product.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-04-15 11:01:51,712 - app - ERROR - Exception on /auth/products [GET]
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 945, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedColumn: column product.meta_description does not exist
+LINE 1: ...roduct_title, product.content AS product_content, product.me...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/auth.py", line 138, in product_management
+    products = Product.query.order_by(Product.created_at.desc()).all()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2704, in all
+    return self._iter().all()  # type: ignore
+           ^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2858, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/orm/context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1843, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2352, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 945, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column product.meta_description does not exist
+LINE 1: ...roduct_title, product.content AS product_content, product.me...
+                                                             ^
+
+[SQL: SELECT product.id AS product_id, product.title AS product_title, product.content AS product_content, product.meta_description AS product_meta_description, product.key_features AS product_key_features, product.technical_specs AS product_technical_specs, product.published AS product_published, product.created_at AS product_created_at, product.updated_at AS product_updated_at, product.author_id AS product_author_id 
+FROM product ORDER BY product.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-04-15 11:01:57,733 - app - ERROR - Exception on /product/ [GET]
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 945, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedColumn: column product.meta_description does not exist
+LINE 1: ...roduct_title, product.content AS product_content, product.me...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/routes.py", line 97, in product
+    products = get_products()
+               ^^^^^^^^^^^^^^
+  File "/home/runner/workspace/routes.py", line 31, in get_products
+    products = Product.query.filter_by(published=True).order_by(Product.created_at.desc()).all()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2704, in all
+    return self._iter().all()  # type: ignore
+           ^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2858, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/orm/context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1843, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2352, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 945, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column product.meta_description does not exist
+LINE 1: ...roduct_title, product.content AS product_content, product.me...
+                                                             ^
+
+[SQL: SELECT product.id AS product_id, product.title AS product_title, product.content AS product_content, product.meta_description AS product_meta_description, product.key_features AS product_key_features, product.technical_specs AS product_technical_specs, product.published AS product_published, product.created_at AS product_created_at, product.updated_at AS product_updated_at, product.author_id AS product_author_id 
+FROM product 
+WHERE product.published = true ORDER BY product.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-04-15 11:02:01,892 - app - ERROR - Exception on /auth/products [GET]
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 945, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedColumn: column product.meta_description does not exist
+LINE 1: ...roduct_title, product.content AS product_content, product.me...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/auth.py", line 138, in product_management
+    products = Product.query.order_by(Product.created_at.desc()).all()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2704, in all
+    return self._iter().all()  # type: ignore
+           ^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2858, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/orm/context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1843, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2352, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 945, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column product.meta_description does not exist
+LINE 1: ...roduct_title, product.content AS product_content, product.me...
+                                                             ^
+
+[SQL: SELECT product.id AS product_id, product.title AS product_title, product.content AS product_content, product.meta_description AS product_meta_description, product.key_features AS product_key_features, product.technical_specs AS product_technical_specs, product.published AS product_published, product.created_at AS product_created_at, product.updated_at AS product_updated_at, product.author_id AS product_author_id 
+FROM product ORDER BY product.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-04-15 11:02:12,369 - root - INFO - Database tables created successfully
+2025-04-15 11:02:12,509 - root - INFO - Database tables created successfully
+2025-04-15 11:02:12,531 - root - INFO - Database tables created successfully
+2025-04-15 11:02:19,832 - app - ERROR - Exception on /auth/products [GET]
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 945, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedColumn: column product.meta_description does not exist
+LINE 1: ...roduct_title, product.content AS product_content, product.me...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/auth.py", line 138, in product_management
+    products = Product.query.order_by(Product.created_at.desc()).all()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2704, in all
+    return self._iter().all()  # type: ignore
+           ^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2858, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/orm/context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1843, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2352, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 945, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column product.meta_description does not exist
+LINE 1: ...roduct_title, product.content AS product_content, product.me...
+                                                             ^
+
+[SQL: SELECT product.id AS product_id, product.title AS product_title, product.content AS product_content, product.meta_description AS product_meta_description, product.key_features AS product_key_features, product.technical_specs AS product_technical_specs, product.published AS product_published, product.created_at AS product_created_at, product.updated_at AS product_updated_at, product.author_id AS product_author_id 
+FROM product ORDER BY product.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-04-15 11:03:56,044 - root - INFO - Database tables created successfully
+2025-04-15 11:03:56,051 - root - INFO - Database tables created successfully
+2025-04-15 11:03:56,138 - root - INFO - Database tables created successfully
+2025-04-15 11:03:56,392 - app - ERROR - Exception on /auth/products [GET]
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 945, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedColumn: column product.meta_description does not exist
+LINE 1: ...roduct_title, product.content AS product_content, product.me...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/auth.py", line 138, in product_management
+    products = Product.query.order_by(Product.created_at.desc()).all()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2704, in all
+    return self._iter().all()  # type: ignore
+           ^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2858, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/orm/context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1843, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2352, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 945, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column product.meta_description does not exist
+LINE 1: ...roduct_title, product.content AS product_content, product.me...
+                                                             ^
+
+[SQL: SELECT product.id AS product_id, product.title AS product_title, product.content AS product_content, product.meta_description AS product_meta_description, product.key_features AS product_key_features, product.technical_specs AS product_technical_specs, product.published AS product_published, product.created_at AS product_created_at, product.updated_at AS product_updated_at, product.author_id AS product_author_id 
+FROM product ORDER BY product.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/f405)

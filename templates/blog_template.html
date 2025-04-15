@@ -1,0 +1,131 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<!-- Blog Post Header -->
+<div class="bg-dark-900 py-12">
+    <div class="container mx-auto px-4">
+        <!-- Breadcrumb Navigation -->
+        <div class="text-gray-400 mb-8">
+            <a href="{{ url_for('index') }}" class="hover:text-primary-400 transition-colors">Home</a>
+            <span class="mx-2">/</span>
+            <a href="{{ url_for('blog') }}" class="hover:text-primary-400 transition-colors">Blog</a>
+            <span class="mx-2">/</span>
+            <span class="text-gray-200">{{ title }}</span>
+        </div>
+        
+        <!-- Title Section -->
+        <h1 class="text-3xl md:text-4xl font-bold mb-4">{{ title }}</h1>
+        {% if blog_post %}
+        <div class="flex items-center text-gray-400 mt-3">
+            <span class="mr-4"><i class="far fa-calendar-alt mr-2"></i>{{ blog_post.created_at.strftime('%B %d, %Y') }}</span>
+            <span><i class="far fa-user mr-2"></i>{{ blog_post.author.username }}</span>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+<!-- Blog Content -->
+<div class="bg-dark-800 py-12">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Main Content -->
+            <div class="lg:col-span-2">
+                <div class="bg-dark-900 rounded-lg overflow-hidden">
+                    <!-- Featured Image -->
+                    <div class="h-64 bg-gradient-to-r from-dark-700 to-dark-900 flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-6xl text-primary-400 opacity-40"></i>
+                    </div>
+                    
+                    <!-- Content -->
+                    <div class="p-8">
+                        <div class="prose prose-lg prose-invert max-w-none blog-content">
+                            {{ content|safe }}
+                        </div>
+                        
+                        <!-- Tags -->
+                        <div class="mt-8 pt-6 border-t border-gray-800">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-primary-400 bg-opacity-20 text-primary-400 text-sm py-1 px-3 rounded-full">Cyber Security</span>
+                                <span class="bg-primary-400 bg-opacity-20 text-primary-400 text-sm py-1 px-3 rounded-full">Best Practices</span>
+                                <span class="bg-primary-400 bg-opacity-20 text-primary-400 text-sm py-1 px-3 rounded-full">Web Security</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Share Links -->
+                        <div class="mt-6">
+                            <p class="text-gray-400 mb-3">Share this article:</p>
+                            <div class="flex space-x-3">
+                                <a href="https://twitter.com/intent/tweet?url={{ request.url|urlencode }}&text={{ title|urlencode }}" 
+                                   target="_blank" 
+                                   class="text-gray-400 hover:text-primary-400 transition-colors">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u={{ request.url|urlencode }}"
+                                   target="_blank"
+                                   class="text-gray-400 hover:text-primary-400 transition-colors">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ request.url|urlencode }}&title={{ title|urlencode }}"
+                                   target="_blank"
+                                   class="text-gray-400 hover:text-primary-400 transition-colors">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="mailto:?subject={{ title|urlencode }}&body={{ request.url|urlencode }}"
+                                   class="text-gray-400 hover:text-primary-400 transition-colors">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sidebar -->
+            <div>
+                <!-- About Author -->
+                <div class="bg-dark-900 rounded-lg p-6 mb-8">
+                    <h3 class="text-xl font-semibold mb-4">About Kogabe</h3>
+                    <p class="text-gray-400 mb-4">
+                        Kogabe is a leading cyber security company providing cutting-edge solutions to protect organizations against evolving digital threats.
+                    </p>
+                    <a href="{{ url_for('about') }}" class="text-primary-400 hover:text-primary-300 inline-flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Related Posts -->
+                <div class="bg-dark-900 rounded-lg p-6">
+                    <h3 class="text-xl font-semibold mb-4">Related Articles</h3>
+                    <div class="space-y-4">
+                        <a href="{{ url_for('blog') }}" class="block hover:bg-dark-800 p-3 rounded-lg transition-colors">
+                            <h4 class="font-medium hover:text-primary-400 transition-colors">View All Blog Posts</h4>
+                            <p class="text-gray-400 text-sm mt-1">Return to blog listing</p>
+                        </a>
+                        <a href="{{ url_for('contact') }}" class="block hover:bg-dark-800 p-3 rounded-lg transition-colors">
+                            <h4 class="font-medium hover:text-primary-400 transition-colors">Have Questions?</h4>
+                            <p class="text-gray-400 text-sm mt-1">Contact our security experts</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Call to Action -->
+<div class="bg-dark-900 py-12">
+    <div class="container mx-auto px-4">
+        <div class="bg-gradient-to-r from-dark-800 to-blue-900 rounded-xl p-8">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold mb-4">Ready to enhance your security posture?</h3>
+                <p class="text-gray-300 mb-6 max-w-3xl mx-auto">
+                    Contact our team of security experts to discuss how Kogabe can help protect your organization.
+                </p>
+                <a href="{{ url_for('contact') }}" class="bg-primary-500 hover:bg-primary-600 text-dark-900 font-bold py-3 px-8 rounded-md transition-colors inline-block">
+                    Get in Touch
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

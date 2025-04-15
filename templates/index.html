@@ -1,0 +1,388 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="relative bg-dark-900 overflow-hidden">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 z-0 opacity-10">
+        <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\'100\' height=\'100\' viewBox=\'0 0 100 100\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z\' fill=\'%2300ffea\' fill-opacity=\'0.1\' fill-rule=\'evenodd\'/%3E%3C/svg%3E'); background-size: 150px;"></div>
+    </div>
+    
+    <div class="container mx-auto px-4 py-24 md:py-32 relative z-10">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 cyber-text-glow">
+                <span class="block">Advanced Cyber Security</span>
+                <span class="block text-primary-400">For The Digital Age</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-10">
+                Protecting your digital assets with state-of-the-art security solutions and expertise.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="{{ url_for('service') }}" class="bg-primary-500 hover:bg-primary-600 text-dark-900 font-bold py-3 px-8 rounded-md transition-colors shadow-lg hover:shadow-xl">
+                    <i class="fas fa-shield-alt mr-2"></i> Explore Services
+                </a>
+                <a href="{{ url_for('contact') }}" class="bg-transparent hover:bg-dark-700 text-white border border-primary-400 hover:border-primary-500 font-bold py-3 px-8 rounded-md transition-colors">
+                    <i class="fas fa-headset mr-2"></i> Contact Us
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Animated Security Elements -->
+    <div class="absolute bottom-0 left-0 right-0 h-1 bg-primary-400 opacity-70"></div>
+</section>
+
+<!-- Services Section -->
+<section class="py-16 bg-dark-800" id="services">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Our <span class="text-primary-400">Services</span></h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">Comprehensive security solutions tailored to protect your business against evolving cyber threats.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Web Application Pentesting -->
+            <div class="bg-dark-900 rounded-lg p-6 service-card reveal">
+                <div class="w-16 h-16 bg-primary-400 bg-opacity-10 rounded-full flex items-center justify-center mb-6 mx-auto">
+                    <i class="fas fa-code text-2xl text-primary-400"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3 text-center">Web Application Pentesting</h3>
+                <p class="text-gray-400 text-center">Identify vulnerabilities in your web applications before attackers do.</p>
+                <div class="mt-6 text-center">
+                    <a href="{{ url_for('service') }}#web-testing" class="text-primary-400 hover:text-primary-300 inline-flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Network Security Testing -->
+            <div class="bg-dark-900 rounded-lg p-6 service-card reveal">
+                <div class="w-16 h-16 bg-primary-400 bg-opacity-10 rounded-full flex items-center justify-center mb-6 mx-auto">
+                    <i class="fas fa-network-wired text-2xl text-primary-400"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3 text-center">Network Security Testing</h3>
+                <p class="text-gray-400 text-center">Comprehensive evaluation of network infrastructure to uncover security gaps.</p>
+                <div class="mt-6 text-center">
+                    <a href="{{ url_for('service') }}#network-security" class="text-primary-400 hover:text-primary-300 inline-flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Phishing Awareness -->
+            <div class="bg-dark-900 rounded-lg p-6 service-card reveal">
+                <div class="w-16 h-16 bg-primary-400 bg-opacity-10 rounded-full flex items-center justify-center mb-6 mx-auto">
+                    <i class="fas fa-user-shield text-2xl text-primary-400"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3 text-center">Phishing Awareness & Training</h3>
+                <p class="text-gray-400 text-center">Educate your team to recognize and avoid sophisticated phishing attempts.</p>
+                <div class="mt-6 text-center">
+                    <a href="{{ url_for('service') }}#phishing" class="text-primary-400 hover:text-primary-300 inline-flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Vulnerability Assessment -->
+            <div class="bg-dark-900 rounded-lg p-6 service-card reveal">
+                <div class="w-16 h-16 bg-primary-400 bg-opacity-10 rounded-full flex items-center justify-center mb-6 mx-auto">
+                    <i class="fas fa-search text-2xl text-primary-400"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3 text-center">Vulnerability Assessment</h3>
+                <p class="text-gray-400 text-center">Systematic identification and analysis of security vulnerabilities in your systems.</p>
+                <div class="mt-6 text-center">
+                    <a href="{{ url_for('service') }}#vulnerability" class="text-primary-400 hover:text-primary-300 inline-flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="py-16 bg-dark-900">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Choose <span class="text-primary-400">Kogabe</span></h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">Our approach combines industry expertise with cutting-edge technology to deliver superior security solutions.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Expert Team -->
+            <div class="bg-dark-800 p-6 rounded-lg reveal hover-scale">
+                <div class="flex items-center mb-4">
+                    <div class="bg-primary-400 bg-opacity-10 p-3 rounded-full mr-4">
+                        <i class="fas fa-users text-xl text-primary-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold">Expert Team</h3>
+                </div>
+                <p class="text-gray-400">Our security professionals bring years of industry experience and hold leading certifications in cybersecurity.</p>
+            </div>
+            
+            <!-- Comprehensive Solutions -->
+            <div class="bg-dark-800 p-6 rounded-lg reveal hover-scale">
+                <div class="flex items-center mb-4">
+                    <div class="bg-primary-400 bg-opacity-10 p-3 rounded-full mr-4">
+                        <i class="fas fa-puzzle-piece text-xl text-primary-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold">Comprehensive Solutions</h3>
+                </div>
+                <p class="text-gray-400">We offer end-to-end security services tailored to your organization's specific needs and challenges.</p>
+            </div>
+            
+            <!-- Advanced Technology -->
+            <div class="bg-dark-800 p-6 rounded-lg reveal hover-scale">
+                <div class="flex items-center mb-4">
+                    <div class="bg-primary-400 bg-opacity-10 p-3 rounded-full mr-4">
+                        <i class="fas fa-microchip text-xl text-primary-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold">Advanced Technology</h3>
+                </div>
+                <p class="text-gray-400">Utilizing the latest security tools and techniques to stay ahead of emerging threats and vulnerabilities.</p>
+            </div>
+            
+            <!-- Proactive Approach -->
+            <div class="bg-dark-800 p-6 rounded-lg reveal hover-scale">
+                <div class="flex items-center mb-4">
+                    <div class="bg-primary-400 bg-opacity-10 p-3 rounded-full mr-4">
+                        <i class="fas fa-shield-virus text-xl text-primary-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold">Proactive Approach</h3>
+                </div>
+                <p class="text-gray-400">We don't just react to threats - we anticipate them, helping you build resilient security postures.</p>
+            </div>
+            
+            <!-- Detailed Reporting -->
+            <div class="bg-dark-800 p-6 rounded-lg reveal hover-scale">
+                <div class="flex items-center mb-4">
+                    <div class="bg-primary-400 bg-opacity-10 p-3 rounded-full mr-4">
+                        <i class="fas fa-chart-line text-xl text-primary-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold">Detailed Reporting</h3>
+                </div>
+                <p class="text-gray-400">Clear, actionable reports with prioritized recommendations to effectively address security issues.</p>
+            </div>
+            
+            <!-- 24/7 Support -->
+            <div class="bg-dark-800 p-6 rounded-lg reveal hover-scale">
+                <div class="flex items-center mb-4">
+                    <div class="bg-primary-400 bg-opacity-10 p-3 rounded-full mr-4">
+                        <i class="fas fa-headset text-xl text-primary-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold">24/7 Support</h3>
+                </div>
+                <p class="text-gray-400">Round-the-clock security monitoring and support to respond quickly to incidents and threats.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="py-16 bg-gradient-to-b from-dark-800 to-dark-900">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+            <div class="reveal">
+                <div class="text-4xl md:text-5xl font-bold text-primary-400 mb-2">500+</div>
+                <p class="text-gray-400">Security Assessments</p>
+            </div>
+            <div class="reveal">
+                <div class="text-4xl md:text-5xl font-bold text-primary-400 mb-2">98%</div>
+                <p class="text-gray-400">Client Satisfaction</p>
+            </div>
+            <div class="reveal">
+                <div class="text-4xl md:text-5xl font-bold text-primary-400 mb-2">24/7</div>
+                <p class="text-gray-400">Security Monitoring</p>
+            </div>
+            <div class="reveal">
+                <div class="text-4xl md:text-5xl font-bold text-primary-400 mb-2">100%</div>
+                <p class="text-gray-400">Commitment to Security</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="py-16 bg-dark-800" id="contact-section">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Get In <span class="text-primary-400">Touch</span></h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">Have questions about our services or want to discuss your security needs? Reach out to us today.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Contact Info -->
+            <div class="bg-dark-900 p-8 rounded-lg reveal">
+                <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+                
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="bg-primary-400 bg-opacity-10 p-3 rounded-full mr-4 mt-1">
+                            <i class="fas fa-map-marker-alt text-primary-400"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium mb-1">Address</h4>
+                            <p class="text-gray-400">C3, Peacock nagar, Viraganoor, Madurai, Tamil Nadu</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-primary-400 bg-opacity-10 p-3 rounded-full mr-4 mt-1">
+                            <i class="fas fa-envelope text-primary-400"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium mb-1">Email</h4>
+                            <p class="text-gray-400">
+                                <a href="mailto:kogabemanagement@gmail.com" class="hover:text-primary-400 transition-colors">kogabemanagement@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-primary-400 bg-opacity-10 p-3 rounded-full mr-4 mt-1">
+                            <i class="fas fa-phone-alt text-primary-400"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium mb-1">Phone</h4>
+                            <p class="text-gray-400">
+                                <a href="tel:+919566925817" class="hover:text-primary-400 transition-colors">+91-9566925817</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-primary-400 bg-opacity-10 p-3 rounded-full mr-4 mt-1">
+                            <i class="fas fa-clock text-primary-400"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium mb-1">Business Hours</h4>
+                            <p class="text-gray-400">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                            <p class="text-gray-400">Saturday: 10:00 AM - 2:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8">
+                    <h4 class="font-medium mb-3">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-dark-700 hover:bg-primary-400 text-white hover:text-dark-900 w-10 h-10 rounded-full flex items-center justify-center transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="bg-dark-700 hover:bg-primary-400 text-white hover:text-dark-900 w-10 h-10 rounded-full flex items-center justify-center transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-dark-700 hover:bg-primary-400 text-white hover:text-dark-900 w-10 h-10 rounded-full flex items-center justify-center transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-dark-700 hover:bg-primary-400 text-white hover:text-dark-900 w-10 h-10 rounded-full flex items-center justify-center transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Form -->
+            <div class="bg-dark-900 p-8 rounded-lg reveal">
+                <h3 class="text-2xl font-semibold mb-6">Send Us a Message</h3>
+                
+                <form action="{{ url_for('contact') }}" method="POST" class="space-y-6 contact-form">
+                    {{ form.hidden_tag() }}
+                    
+                    <div>
+                        <label for="name" class="block mb-2 text-sm font-medium">Full Name</label>
+                        <input type="text" id="name" name="name" class="w-full bg-dark-700 border border-gray-700 rounded-md py-3 px-4 text-white focus:outline-none focus:border-primary-400 form-input" placeholder="Your name" required>
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block mb-2 text-sm font-medium">Email Address</label>
+                        <input type="email" id="email" name="email" class="w-full bg-dark-700 border border-gray-700 rounded-md py-3 px-4 text-white focus:outline-none focus:border-primary-400 form-input" placeholder="Your email" required>
+                    </div>
+                    
+                    <div>
+                        <label for="phone" class="block mb-2 text-sm font-medium">Phone Number (Optional)</label>
+                        <input type="tel" id="phone" name="phone" class="w-full bg-dark-700 border border-gray-700 rounded-md py-3 px-4 text-white focus:outline-none focus:border-primary-400 form-input" placeholder="Your phone number">
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block mb-2 text-sm font-medium">Message</label>
+                        <textarea id="message" name="message" rows="4" class="w-full bg-dark-700 border border-gray-700 rounded-md py-3 px-4 text-white focus:outline-none focus:border-primary-400 form-input" placeholder="Your message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="bg-primary-500 hover:bg-primary-600 text-dark-900 font-bold py-3 px-6 rounded-md transition-colors shadow-lg hover:shadow-xl w-full">
+                        <i class="fas fa-paper-plane mr-2"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Us Section -->
+<section class="py-16 bg-dark-900" id="about-section">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- About Content -->
+            <div class="reveal">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">About <span class="text-primary-400">Kogabe</span></h2>
+                <p class="text-gray-300 mb-6">
+                    Founded in 2023, Kogabe is a dedicated cyber security company providing cutting-edge solutions to protect organizations against evolving digital threats.
+                </p>
+                <p class="text-gray-400 mb-6">
+                    Our team of security experts brings extensive experience in identifying vulnerabilities, implementing robust security measures, and developing strategies to safeguard your digital assets.
+                </p>
+                <p class="text-gray-400 mb-8">
+                    At Kogabe, we're committed to staying ahead of emerging threats and delivering exceptional service to our clients, ensuring their data and systems remain secure in an increasingly complex digital landscape.
+                </p>
+                <a href="{{ url_for('about') }}" class="inline-flex items-center text-primary-400 hover:text-primary-300 font-medium">
+                    Learn More About Us <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+            
+            <!-- About Features -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="bg-dark-800 p-6 rounded-lg reveal hover-scale">
+                    <i class="fas fa-rocket text-primary-400 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Mission</h3>
+                    <p class="text-gray-400">To empower organizations with robust security solutions that protect their digital assets and enable safe growth.</p>
+                </div>
+                
+                <div class="bg-dark-800 p-6 rounded-lg reveal hover-scale">
+                    <i class="fas fa-eye text-primary-400 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Vision</h3>
+                    <p class="text-gray-400">To be the trusted security partner for businesses navigating the complexities of the digital world.</p>
+                </div>
+                
+                <div class="bg-dark-800 p-6 rounded-lg reveal hover-scale">
+                    <i class="fas fa-certificate text-primary-400 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Values</h3>
+                    <p class="text-gray-400">Integrity, excellence, innovation, and client-centric approach guide our every action.</p>
+                </div>
+                
+                <div class="bg-dark-800 p-6 rounded-lg reveal hover-scale">
+                    <i class="fas fa-handshake text-primary-400 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Commitment</h3>
+                    <p class="text-gray-400">We're dedicated to delivering exceptional security services with transparency and accountability.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-16 bg-gradient-to-r from-dark-900 to-dark-800">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 reveal">Ready to Secure Your Digital Assets?</h2>
+        <p class="text-gray-300 max-w-2xl mx-auto mb-10 reveal">
+            Partner with Kogabe for comprehensive cyber security solutions tailored to your organization's needs.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4 reveal">
+            <a href="{{ url_for('service') }}" class="bg-primary-500 hover:bg-primary-600 text-dark-900 font-bold py-3 px-8 rounded-md transition-colors shadow-lg hover:shadow-xl">
+                <i class="fas fa-shield-alt mr-2"></i> Our Services
+            </a>
+            <a href="{{ url_for('contact') }}" class="bg-transparent hover:bg-dark-700 text-white border border-primary-400 hover:border-primary-500 font-bold py-3 px-8 rounded-md transition-colors">
+                <i class="fas fa-headset mr-2"></i> Contact Us
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}

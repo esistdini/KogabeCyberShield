@@ -1,0 +1,378 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<!-- Services Header -->
+<section class="py-16 bg-dark-900">
+    <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">Our <span class="text-primary-400">Services</span></h1>
+        <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+            Comprehensive cyber security solutions to protect your digital assets and infrastructure.
+        </p>
+    </div>
+</section>
+
+<!-- Web Application Penetration Testing -->
+<section id="web-testing" class="py-16 bg-dark-800">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="reveal">
+                <div class="bg-primary-400 bg-opacity-10 w-20 h-20 rounded-full flex items-center justify-center mb-6">
+                    <i class="fas fa-code text-3xl text-primary-400"></i>
+                </div>
+                <h2 class="text-3xl font-bold mb-6">Web Application <span class="text-primary-400">Penetration Testing</span></h2>
+                <p class="text-gray-300 mb-6">
+                    Our comprehensive web application penetration testing identifies vulnerabilities in your web applications before attackers can exploit them.
+                </p>
+                <p class="text-gray-400 mb-4">
+                    Modern web applications are complex and often contain vulnerabilities that can lead to data breaches, unauthorized access, or system compromise. Our expert team uses both automated tools and manual testing techniques to thoroughly assess your web applications for security flaws.
+                </p>
+                <p class="text-gray-400 mb-6">
+                    We follow industry-standard methodologies including OWASP Top 10 and SANS Top 25 to identify critical vulnerabilities such as:
+                </p>
+                <ul class="space-y-3 text-gray-400 mb-8">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-primary-400 mt-1 mr-3"></i>
+                        <span>SQL Injection and other code injection vulnerabilities</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-primary-400 mt-1 mr-3"></i>
+                        <span>Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF)</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-primary-400 mt-1 mr-3"></i>
+                        <span>Authentication and session management flaws</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-primary-400 mt-1 mr-3"></i>
+                        <span>Insecure direct object references and access control issues</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-primary-400 mt-1 mr-3"></i>
+                        <span>Security misconfiguration and sensitive data exposure</span>
+                    </li>
+                </ul>
+                <p class="text-gray-400 mb-6">
+                    After testing, we provide a comprehensive report with detailed findings, risk assessments, and actionable remediation recommendations prioritized by severity.
+                </p>
+            </div>
+            <div class="bg-dark-900 p-8 rounded-lg reveal">
+                <div class="space-y-6">
+                    <div class="border-l-4 border-primary-400 pl-4 py-2">
+                        <h3 class="text-xl font-semibold mb-2">Testing Methodology</h3>
+                        <p class="text-gray-400">We employ a structured approach including reconnaissance, mapping, vulnerability discovery, exploitation, and post-exploitation analysis.</p>
+                    </div>
+                    <div class="border-l-4 border-primary-400 pl-4 py-2">
+                        <h3 class="text-xl font-semibold mb-2">Coverage Areas</h3>
+                        <p class="text-gray-400">Front-end interfaces, APIs, database connections, authentication mechanisms, and business logic vulnerabilities.</p>
+                    </div>
+                    <div class="border-l-4 border-primary-400 pl-4 py-2">
+                        <h3 class="text-xl font-semibold mb-2">Deliverables</h3>
+                        <p class="text-gray-400">Executive summary, detailed technical findings, proof-of-concept demonstrations, and prioritized remediation recommendations.</p>
+                    </div>
+                    <div class="border-l-4 border-primary-400 pl-4 py-2">
+                        <h3 class="text-xl font-semibold mb-2">Benefits</h3>
+                        <p class="text-gray-400">Reduced risk of data breaches, improved compliance posture, and enhanced security awareness among development teams.</p>
+                    </div>
+                </div>
+                <div class="mt-8 bg-dark-800 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Ready to secure your web applications?</h3>
+                    <a href="{{ url_for('contact') }}" class="bg-primary-500 hover:bg-primary-600 text-dark-900 font-bold py-3 px-6 rounded-md transition-colors inline-block w-full text-center">
+                        Request a Testing Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Network Security Testing -->
+<section id="network-security" class="py-16 bg-dark-900">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="bg-dark-800 p-8 rounded-lg reveal order-2 lg:order-1">
+                <div class="space-y-6">
+                    <div class="border-l-4 border-primary-400 pl-4 py-2">
+                        <h3 class="text-xl font-semibold mb-2">Testing Approach</h3>
+                        <p class="text-gray-400">Internal and external network testing, simulating both malicious outsider and insider threat scenarios.</p>
+                    </div>
+                    <div class="border-l-4 border-primary-400 pl-4 py-2">
+                        <h3 class="text-xl font-semibold mb-2">Target Systems</h3>
+                        <p class="text-gray-400">Network devices, servers, workstations, wireless networks, VPNs, and cloud infrastructure.</p>
+                    </div>
+                    <div class="border-l-4 border-primary-400 pl-4 py-2">
+                        <h3 class="text-xl font-semibold mb-2">Deliverables</h3>
+                        <p class="text-gray-400">Network architecture assessment, vulnerability report, security gap analysis, and strategic remediation plan.</p>
+                    </div>
+                    <div class="border-l-4 border-primary-400 pl-4 py-2">
+                        <h3 class="text-xl font-semibold mb-2">Benefits</h3>
+                        <p class="text-gray-400">Strengthened network defense, reduced attack surface, and improved incident response capabilities.</p>
+                    </div>
+                </div>
+                <div class="mt-8 bg-dark-900 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Ready to secure your network infrastructure?</h3>
+                    <a href="{{ url_for('contact') }}" class="bg-primary-500 hover:bg-primary-600 text-dark-900 font-bold py-3 px-6 rounded-md transition-colors inline-block w-full text-center">
+                        Request a Network Assessment
+                    </a>
+                </div>
+            </div>
+            <div class="reveal order-1 lg:order-2">
+                <div class="bg-primary-400 bg-opacity-10 w-20 h-20 rounded-full flex items-center justify-center mb-6">
+                    <i class="fas fa-network-wired text-3xl text-primary-400"></i>
+                </div>
+                <h2 class="text-3xl font-bold mb-6">Network Security <span class="text-primary-400">Testing</span></h2>
+                <p class="text-gray-300 mb-6">
+                    Our comprehensive network security testing identifies vulnerabilities and security gaps in your network infrastructure before attackers can exploit them.
+                </p>
+                <p class="text-gray-400 mb-4">
+                    Your network is the backbone of your IT infrastructure, and securing it is critical to protecting your organization's data and systems. Our network security testing provides a thorough assessment of your network's security posture, identifying weaknesses that could be exploited by attackers.
+                </p>
+                <p class="text-gray-400 mb-6">
+                    Our network security testing covers various aspects of your infrastructure, including:
+                </p>
+                <ul class="space-y-3 text-gray-400 mb-8">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-primary-400 mt-1 mr-3"></i>
+                        <span>External network penetration testing to identify internet-facing vulnerabilities</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-primary-400 mt-1 mr-3"></i>
+                        <span>Internal network assessment to evaluate insider threat risks</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-primary-400 mt-1 mr-3"></i>
+                        <span>Wireless network security testing</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-primary-400 mt-1 mr-3"></i>
+                        <span>Firewall and network device configuration review</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-primary-400 mt-1 mr-3"></i>
+                        <span>VPN security assessment</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-primary-400 mt-1 mr-3"></i>
+                        <span>Network segmentation analysis</span>
+                    </li>
+                </ul>
+                <p class="text-gray-400">
+                    Our expert team uses a combination of automated tools and manual techniques to provide a thorough assessment of your network's security posture, giving you actionable insights to strengthen your defenses.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Phishing Awareness and Training -->
+<section id="phishing" class="py-16 bg-dark-800">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="reveal">
+                <div class="bg-primary-400 bg-opacity-10 w-20 h-20 rounded-full flex items-center justify-center mb-6">
+                    <i class="fas fa-user-shield text-3xl text-primary-400"></i>
+                </div>
+                <h2 class="text-3xl font-bold mb-6">Phishing Awareness and <span class="text-primary-400">Training</span></h2>
+                <p class="text-gray-300 mb-6">
+                    Empower your employees to recognize and respond appropriately to phishing attempts through our comprehensive awareness and training programs.
+                </p>
+                <p class="text-gray-400 mb-4">
+                    Phishing remains one of the most prevalent and successful attack vectors for cybercriminals. Even with technical security measures in place, a single successful phishing attack can compromise your entire organization. Our phishing awareness and training program strengthens your human firewall by educating employees on recognizing and responding to phishing attempts.
+                </p>
+                <p class="text-gray-400 mb-6">
+                    Our comprehensive phishing awareness and training program includes:
+                </p>
+                <ul class="space-y-3 text-gray-400 mb-8">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-primary-400 mt-1 mr-3"></i>
+                        <span>Simulated phishing campaigns to assess employee vulnerability</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-primary-400 mt-1 mr-3"></i>
+                        <span>Interactive training modules covering various phishing techniques</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-primary-400 mt-1 mr-3"></i>
+                        <span>Targeted training based on simulation results</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-primary-400 mt-1 mr-3"></i>
+                        <span>Real-time phishing attempt reporting tools</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-primary-400 mt-1 mr-3"></i>
+                        <span>Regular reinforcement and metrics tracking to measure improvement</span>
+                    </li>
+                </ul>
+                <p class="text-gray-400 mb-6">
+                    We tailor our training programs to your organization's specific needs, delivering engaging content that resonates with your employees and creates a security-conscious culture.
+                </p>
+            </div>
+            <div class="bg-dark-900 p-8 rounded-lg reveal">
+                <div class="space-y-6">
+                    <div class="border-l-4 border-primary-400 pl-4 py-2">
+                        <h3 class="text-xl font-semibold mb-2">Training Approach</h3>
+                        <p class="text-gray-400">Combines simulated phishing attacks with interactive training modules and real-world examples to maximize retention.</p>
+                    </div>
+                    <div class="border-l-4 border-primary-400 pl-4 py-2">
+                        <h3 class="text-xl font-semibold mb-2">Customization</h3>
+                        <p class="text-gray-400">Training content tailored to your industry, organization size, and specific threats targeting your sector.</p>
+                    </div>
+                    <div class="border-l-4 border-primary-400 pl-4 py-2">
+                        <h3 class="text-xl font-semibold mb-2">Measurement</h3>
+                        <p class="text-gray-400">Comprehensive reporting and analytics to track improvement and identify areas needing additional focus.</p>
+                    </div>
+                    <div class="border-l-4 border-primary-400 pl-4 py-2">
+                        <h3 class="text-xl font-semibold mb-2">Benefits</h3>
+                        <p class="text-gray-400">Reduced susceptibility to phishing attacks, faster incident reporting, and strengthened overall security culture.</p>
+                    </div>
+                </div>
+                <div class="mt-8 bg-dark-800 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Ready to strengthen your human firewall?</h3>
+                    <a href="{{ url_for('contact') }}" class="bg-primary-500 hover:bg-primary-600 text-dark-900 font-bold py-3 px-6 rounded-md transition-colors inline-block w-full text-center">
+                        Request a Training Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Vulnerability Assessment -->
+<section id="vulnerability" class="py-16 bg-dark-900">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="bg-dark-800 p-8 rounded-lg reveal order-2 lg:order-1">
+                <div class="space-y-6">
+                    <div class="border-l-4 border-primary-400 pl-4 py-2">
+                        <h3 class="text-xl font-semibold mb-2">Assessment Process</h3>
+                        <p class="text-gray-400">Systematic discovery, classification, and prioritization of vulnerabilities across your IT infrastructure.</p>
+                    </div>
+                    <div class="border-l-4 border-primary-400 pl-4 py-2">
+                        <h3 class="text-xl font-semibold mb-2">Coverage</h3>
+                        <p class="text-gray-400">Operating systems, applications, network devices, cloud services, and custom systems.</p>
+                    </div>
+                    <div class="border-l-4 border-primary-400 pl-4 py-2">
+                        <h3 class="text-xl font-semibold mb-2">Deliverables</h3>
+                        <p class="text-gray-400">Comprehensive vulnerability report, risk assessment matrix, and remediation roadmap with practical guidance.</p>
+                    </div>
+                    <div class="border-l-4 border-primary-400 pl-4 py-2">
+                        <h3 class="text-xl font-semibold mb-2">Benefits</h3>
+                        <p class="text-gray-400">Proactive security posture, reduced incident response costs, and more effective resource allocation.</p>
+                    </div>
+                </div>
+                <div class="mt-8 bg-dark-900 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Ready to identify and address vulnerabilities?</h3>
+                    <a href="{{ url_for('contact') }}" class="bg-primary-500 hover:bg-primary-600 text-dark-900 font-bold py-3 px-6 rounded-md transition-colors inline-block w-full text-center">
+                        Request a Vulnerability Assessment
+                    </a>
+                </div>
+            </div>
+            <div class="reveal order-1 lg:order-2">
+                <div class="bg-primary-400 bg-opacity-10 w-20 h-20 rounded-full flex items-center justify-center mb-6">
+                    <i class="fas fa-search text-3xl text-primary-400"></i>
+                </div>
+                <h2 class="text-3xl font-bold mb-6">Vulnerability <span class="text-primary-400">Assessment</span></h2>
+                <p class="text-gray-300 mb-6">
+                    Our comprehensive vulnerability assessment service identifies, categorizes, and prioritizes security weaknesses across your IT infrastructure.
+                </p>
+                <p class="text-gray-400 mb-4">
+                    Vulnerabilities in your systems and applications can provide attackers with entry points into your network. Our vulnerability assessment service helps you identify and address these weaknesses before they can be exploited, strengthening your overall security posture.
+                </p>
+                <p class="text-gray-400 mb-6">
+                    Our vulnerability assessment service includes:
+                </p>
+                <ul class="space-y-3 text-gray-400 mb-8">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-primary-400 mt-1 mr-3"></i>
+                        <span>Comprehensive scanning of internal and external systems</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-primary-400 mt-1 mr-3"></i>
+                        <span>Identification of security misconfigurations</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-primary-400 mt-1 mr-3"></i>
+                        <span>Detection of missing patches and outdated software</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-primary-400 mt-1 mr-3"></i>
+                        <span>Identification of weak authentication and encryption implementations</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-primary-400 mt-1 mr-3"></i>
+                        <span>Validation and elimination of false positives</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-primary-400 mt-1 mr-3"></i>
+                        <span>Prioritization of findings based on risk level</span>
+                    </li>
+                </ul>
+                <p class="text-gray-400">
+                    Unlike basic automated scanning, our vulnerability assessment combines automated tools with manual verification and analysis to provide accurate results with actionable remediation recommendations.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Service Process -->
+<section class="py-16 bg-dark-800">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Service <span class="text-primary-400">Process</span></h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">How we deliver exceptional security services to meet your unique needs</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Initial Consultation -->
+            <div class="bg-dark-900 p-6 rounded-lg reveal">
+                <div class="w-12 h-12 bg-primary-400 text-dark-900 rounded-full flex items-center justify-center mb-6 text-xl font-bold">1</div>
+                <h3 class="text-xl font-semibold mb-3">Initial Consultation</h3>
+                <p class="text-gray-400">
+                    We begin with a thorough discussion of your security needs, concerns, and objectives to understand your unique requirements.
+                </p>
+            </div>
+            
+            <!-- Planning & Proposal -->
+            <div class="bg-dark-900 p-6 rounded-lg reveal">
+                <div class="w-12 h-12 bg-primary-400 text-dark-900 rounded-full flex items-center justify-center mb-6 text-xl font-bold">2</div>
+                <h3 class="text-xl font-semibold mb-3">Planning & Proposal</h3>
+                <p class="text-gray-400">
+                    Based on your requirements, we develop a detailed service plan and proposal outlining scope, methodology, timeline, and deliverables.
+                </p>
+            </div>
+            
+            <!-- Execution -->
+            <div class="bg-dark-900 p-6 rounded-lg reveal">
+                <div class="w-12 h-12 bg-primary-400 text-dark-900 rounded-full flex items-center justify-center mb-6 text-xl font-bold">3</div>
+                <h3 class="text-xl font-semibold mb-3">Execution</h3>
+                <p class="text-gray-400">
+                    Our expert team executes the security assessment or service according to the agreed plan, maintaining regular communication throughout the process.
+                </p>
+            </div>
+            
+            <!-- Reporting & Recommendations -->
+            <div class="bg-dark-900 p-6 rounded-lg reveal">
+                <div class="w-12 h-12 bg-primary-400 text-dark-900 rounded-full flex items-center justify-center mb-6 text-xl font-bold">4</div>
+                <h3 class="text-xl font-semibold mb-3">Reporting & Follow-up</h3>
+                <p class="text-gray-400">
+                    We deliver comprehensive reports with actionable recommendations and provide ongoing support to help you implement security improvements.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-16 bg-gradient-to-r from-dark-900 to-blue-900">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 reveal">Ready to Secure Your Organization?</h2>
+        <p class="text-gray-300 max-w-2xl mx-auto mb-10 reveal">
+            Contact us today to discuss your specific security needs and how our services can help protect your digital assets.
+        </p>
+        <a href="{{ url_for('contact') }}" class="bg-primary-500 hover:bg-primary-600 text-dark-900 font-bold py-3 px-8 rounded-md transition-colors shadow-lg hover:shadow-xl inline-block reveal">
+            <i class="fas fa-shield-alt mr-2"></i> Get Started Today
+        </a>
+    </div>
+</section>
+{% endblock %}

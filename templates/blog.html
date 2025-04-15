@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<!-- Blog Header -->
+<section class="py-16 bg-dark-900">
+    <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">Cyber Security <span class="text-primary-400 cyber-text-glow">Blog</span></h1>
+        <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+            Stay informed with the latest insights, trends, and best practices in cyber security.
+        </p>
+    </div>
+</section>
+
+<!-- Blog Posts Grid -->
+<section class="py-16 bg-dark-800">
+    <div class="container mx-auto px-4">
+        {% if blogs %}
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {% for blog in blogs %}
+                    <a href="{{ blog.url }}" class="bg-dark-900 rounded-lg overflow-hidden hover-scale transition-all duration-300 reveal">
+                        <div class="h-48 bg-gradient-to-r from-primary-900 to-blue-900 flex items-center justify-center">
+                            <i class="fas fa-shield-alt text-5xl text-primary-400 opacity-50"></i>
+                        </div>
+                        <div class="p-6">
+                            <div class="text-sm text-gray-400 mb-2">{{ blog.created.strftime('%B %d, %Y') }}</div>
+                            <h2 class="text-xl font-bold mb-3 hover:text-primary-400 transition-colors">{{ blog.title }}</h2>
+                            <p class="text-gray-400 mb-4">
+                                {% if blog.summary %}
+                                    {{ blog.summary }}
+                                {% else %}
+                                    Click to read this article about cyber security insights and recommendations.
+                                {% endif %}
+                            </p>
+                            <div class="flex items-center text-primary-400">
+                                <span class="mr-2">Read more</span>
+                                <i class="fas fa-arrow-right text-sm"></i>
+                            </div>
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
+        {% else %}
+            <div class="bg-dark-900 p-12 rounded-lg text-center">
+                <i class="fas fa-newspaper text-5xl text-gray-600 mb-4"></i>
+                <h3 class="text-2xl font-bold mb-2">No Blog Posts Yet</h3>
+                <p class="text-gray-400 mb-6">We're working on creating insightful content for you.</p>
+                <p class="text-gray-400">Check back soon for updates on cyber security trends, tips, and best practices.</p>
+            </div>
+        {% endif %}
+    </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="py-16 bg-dark-900">
+    <div class="container mx-auto px-4">
+        <div class="bg-gradient-to-r from-blue-900 to-dark-800 rounded-xl p-8 md:p-12">
+            <div class="flex flex-col md:flex-row md:items-center justify-between">
+                <div class="mb-8 md:mb-0 md:w-1/2">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-3">Stay Updated with Security Insights</h3>
+                    <p class="text-gray-300">Subscribe to our newsletter to receive the latest cyber security news, tips, and alerts.</p>
+                </div>
+                <div class="md:w-1/2">
+                    <form class="flex flex-col sm:flex-row gap-4">
+                        <input type="email" placeholder="Your email address" class="flex-grow bg-dark-700 border border-gray-700 rounded-md py-3 px-4 text-white focus:outline-none focus:border-primary-400">
+                        <button type="submit" class="bg-primary-500 hover:bg-primary-600 text-dark-900 font-bold py-3 px-6 rounded-md transition-colors">
+                            Subscribe
+                        </button>
+                    </form>
+                    <p class="text-gray-400 text-sm mt-3">We respect your privacy. Unsubscribe at any time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

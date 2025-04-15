@@ -1,0 +1,157 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<!-- Product Header -->
+<div class="bg-dark-900 py-12">
+    <div class="container mx-auto px-4">
+        <!-- Breadcrumb Navigation -->
+        <div class="text-gray-400 mb-8">
+            <a href="{{ url_for('index') }}" class="hover:text-primary-400 transition-colors">Home</a>
+            <span class="mx-2">/</span>
+            <a href="{{ url_for('product') }}" class="hover:text-primary-400 transition-colors">Products</a>
+            <span class="mx-2">/</span>
+            <span class="text-gray-200">{{ title }}</span>
+        </div>
+        
+        <!-- Title Section -->
+        <h1 class="text-3xl md:text-4xl font-bold mb-4">{{ title }}</h1>
+    </div>
+</div>
+
+<!-- Product Content -->
+<div class="bg-dark-800 py-12">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Main Content -->
+            <div class="lg:col-span-2">
+                <div class="bg-dark-900 rounded-lg overflow-hidden">
+                    <!-- Featured Image -->
+                    <div class="h-64 bg-gradient-to-r from-dark-700 to-blue-900 flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-6xl text-primary-400 opacity-40"></i>
+                    </div>
+                    
+                    <!-- Content -->
+                    <div class="p-8">
+                        <div class="prose prose-lg prose-invert max-w-none product-content">
+                            {{ content|safe }}
+                        </div>
+                        
+                        <!-- Key Features -->
+                        <div class="mt-8 pt-6 border-t border-gray-800">
+                            <h3 class="text-xl font-semibold mb-4">Key Features</h3>
+                            <ul class="space-y-3">
+                                {% if product.key_features %}
+                                    {% for feature in product.key_features.split('\n') %}
+                                        {% if feature.strip() %}
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check-circle text-primary-400 mt-1 mr-3"></i>
+                                            <span class="text-gray-300">{{ feature }}</span>
+                                        </li>
+                                        {% endif %}
+                                    {% endfor %}
+                                {% endif %}
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-primary-400 mt-1 mr-3"></i>
+                                    <span class="text-gray-300">Real-time monitoring and alerts</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-primary-400 mt-1 mr-3"></i>
+                                    <span class="text-gray-300">Intuitive management dashboard</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-primary-400 mt-1 mr-3"></i>
+                                    <span class="text-gray-300">Seamless integration with existing systems</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-primary-400 mt-1 mr-3"></i>
+                                    <span class="text-gray-300">Comprehensive reporting and analytics</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sidebar -->
+            <div>
+                <!-- Product Request -->
+                <div class="bg-dark-900 rounded-lg p-6 mb-8">
+                    <h3 class="text-xl font-semibold mb-4">Interested in this Product?</h3>
+                    <p class="text-gray-400 mb-6">
+                        Contact our team for detailed product information, pricing, and implementation details.
+                    </p>
+                    <a href="{{ url_for('contact') }}" class="bg-primary-500 hover:bg-primary-600 text-dark-900 font-bold py-3 px-6 rounded-md transition-colors inline-block w-full text-center">
+                        Request Information
+                    </a>
+                </div>
+                
+                <!-- Related Products -->
+                <div class="bg-dark-900 rounded-lg p-6">
+                    <h3 class="text-xl font-semibold mb-4">Related Products</h3>
+                    <div class="space-y-4">
+                        <a href="{{ url_for('product') }}" class="block hover:bg-dark-800 p-3 rounded-lg transition-colors">
+                            <h4 class="font-medium hover:text-primary-400 transition-colors">See All Security Products</h4>
+                            <p class="text-gray-400 text-sm mt-1">Explore our complete security catalog</p>
+                        </a>
+                        <a href="{{ url_for('service') }}" class="block hover:bg-dark-800 p-3 rounded-lg transition-colors">
+                            <h4 class="font-medium hover:text-primary-400 transition-colors">Professional Services</h4>
+                            <p class="text-gray-400 text-sm mt-1">Implementation and support services</p>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Technical Specifications -->
+                <div class="bg-dark-900 rounded-lg p-6 mt-8">
+                    <h3 class="text-xl font-semibold mb-4">Technical Specifications</h3>
+                    <div class="space-y-3 text-sm">
+                        {% if product.technical_specs %}
+                            {% for spec in product.technical_specs.split('\n') %}
+                                {% if ':' in spec %}
+                                    {% set label, value = spec.split(':', 1) %}
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-400">{{ label.strip() }}:</span>
+                                        <span class="text-white">{{ value.strip() }}</span>
+                                    </div>
+                                {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                        <div class="flex justify-between">
+                            <span class="text-gray-400">Compatibility:</span>
+                            <span class="text-white">Windows, Linux, macOS</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-400">Updates:</span>
+                            <span class="text-white">Automatic</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-400">Support:</span>
+                            <span class="text-white">24/7 Technical Support</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-400">License:</span>
+                            <span class="text-white">Subscription-based</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Call to Action -->
+<div class="bg-dark-900 py-12">
+    <div class="container mx-auto px-4">
+        <div class="bg-gradient-to-r from-dark-800 to-blue-900 rounded-xl p-8">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold mb-4">Ready to strengthen your security posture?</h3>
+                <p class="text-gray-300 mb-6 max-w-3xl mx-auto">
+                    Our security experts are ready to help you implement the right security solutions for your organization.
+                </p>
+                <a href="{{ url_for('contact') }}" class="bg-primary-500 hover:bg-primary-600 text-dark-900 font-bold py-3 px-8 rounded-md transition-colors inline-block">
+                    Contact Us Today
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

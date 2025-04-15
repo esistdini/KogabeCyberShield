@@ -1,0 +1,152 @@
+{% extends "layout.html" %}
+
+{% block head %}
+{{ super() }}
+<!-- Add TinyMCE CDN -->
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+<script>
+  tinymce.init({
+    selector: '#content',
+    height: 500,
+    plugins: [
+      'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview',
+      'anchor', 'searchreplace', 'visualblocks', 'code', 'fullscreen',
+      'insertdatetime', 'media', 'table', 'help', 'wordcount'
+    ],
+    toolbar: 'undo redo | blocks | ' +
+      'bold italic forecolor | alignleft aligncenter ' +
+      'alignright alignjustify | bullist numlist outdent indent | ' +
+      'removeformat | help',
+    content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:16px }'
+  });
+</script>
+{% endblock %}
+
+{% block content %}
+<!-- Dashboard Header -->
+<section class="bg-dark-900 py-6 border-b border-gray-800">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+            <div>
+                <h1 class="text-2xl md:text-3xl font-bold">{{ title }}</h1>
+                <p class="text-gray-400">Create and edit blog content</p>
+            </div>
+            <div class="mt-4 md:mt-0 flex items-center space-x-3">
+                <a href="{{ url_for('blog_management') }}" class="bg-dark-800 hover:bg-dark-700 text-gray-300 px-4 py-2 rounded-md text-sm font-medium flex items-center transition-colors">
+                    <i class="fas fa-arrow-left mr-2"></i> Back to Blog Management
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Blog Form Content -->
+<section class="py-8 bg-dark-800 min-h-screen">
+    <div class="container mx-auto px-4">
+        <!-- Status Messages -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+            <div class="{% if category == 'success' %}bg-green-900 bg-opacity-20 text-green-400{% else %}bg-red-900 bg-opacity-20 text-red-400{% endif %} p-4 rounded-md mb-6">
+                {{ message }}
+            </div>
+            {% endfor %}
+        {% endif %}
+        {% endwith %}
+        
+        <!-- Form Card -->
+        <div class="bg-dark-900 rounded-lg p-6">
+            <form method="POST" action="{{ request.path }}">
+                {{ form.hidden_tag() }}
+                
+                <div class="mb-6">
+                    <label for="title" class="block text-sm font-medium text-gray-300 mb-2">{{ form.title.label }}</label>
+                    {{ form.title(class="w-full bg-dark-800 border border-gray-700 rounded-md py-3 px-4 text-white placeholder-gray-500 focus:outline-none focus:border-primary-400 focus:ring-1 focus:ring-primary-400") }}
+                    {% if form.title.errors %}
+                        {% for error in form.title.errors %}
+                        <p class="text-red-400 text-sm mt-1">{{ error }}</p>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+                
+                <div class="mb-6">
+                    <label for="summary" class="block text-sm font-medium text-gray-300 mb-2">{{ form.summary.label }}</label>
+                    {{ form.summary(class="w-full bg-dark-800 border border-gray-700 rounded-md py-3 px-4 text-white placeholder-gray-500 focus:outline-none focus:border-primary-400 focus:ring-1 focus:ring-primary-400", rows=3) }}
+                    {% if form.summary.errors %}
+                        {% for error in form.summary.errors %}
+                        <p class="text-red-400 text-sm mt-1">{{ error }}</p>
+                        {% endfor %}
+                    {% endif %}
+                    <p class="text-gray-500 text-xs mt-1">{{ form.summary.description }}</p>
+                </div>
+                
+                <div class="mb-6">
+                    <label for="content" class="block text-sm font-medium text-gray-300 mb-2">{{ form.content.label }}</label>
+                    {{ form.content(class="w-full bg-dark-800 border border-gray-700 rounded-md py-3 px-4 text-white placeholder-gray-500 focus:outline-none focus:border-primary-400 focus:ring-1 focus:ring-primary-400", rows=15) }}
+                    {% if form.content.errors %}
+                        {% for error in form.content.errors %}
+                        <p class="text-red-400 text-sm mt-1">{{ error }}</p>
+                        {% endfor %}
+                    {% endif %}
+                    <p class="text-gray-500 text-xs mt-1">{{ form.content.description }}</p>
+                </div>
+                
+                <div class="mb-6">
+                    <div class="flex items-center">
+                        {{ form.published(class="form-checkbox h-5 w-5 text-primary-500 rounded focus:ring-primary-500 focus:ring-opacity-50 border-gray-700 bg-dark-700") }}
+                        <label for="published" class="ml-2 block text-sm font-medium text-gray-300">{{ form.published.label }}</label>
+                    </div>
+                    <p class="text-gray-500 text-xs mt-1">{{ form.published.description }}</p>
+                </div>
+                
+                <div class="flex justify-end">
+                    <a href="{{ url_for('blog_management') }}" class="mr-4 bg-dark-700 hover:bg-dark-600 text-gray-300 px-5 py-3 rounded-md font-medium transition-colors">
+                        Cancel
+                    </a>
+                    {{ form.submit(class="bg-primary-500 hover:bg-primary-600 text-dark-900 px-5 py-3 rounded-md font-medium transition-colors") }}
+                </div>
+            </form>
+        </div>
+        
+        <!-- Tips and Guidance -->
+        <div class="mt-8 bg-dark-900 rounded-lg p-6">
+            <h3 class="text-xl font-medium mb-4">HTML Formatting Tips</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h4 class="text-primary-400 font-medium mb-2">Headings</h4>
+                    <div class="bg-dark-800 p-3 rounded-md">
+                        <code class="text-sm text-gray-400">&lt;h2&gt;Heading 2&lt;/h2&gt;</code><br>
+                        <code class="text-sm text-gray-400">&lt;h3&gt;Heading 3&lt;/h3&gt;</code><br>
+                        <code class="text-sm text-gray-400">&lt;h4&gt;Heading 4&lt;/h4&gt;</code>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-primary-400 font-medium mb-2">Text Formatting</h4>
+                    <div class="bg-dark-800 p-3 rounded-md">
+                        <code class="text-sm text-gray-400">&lt;p&gt;Paragraph text&lt;/p&gt;</code><br>
+                        <code class="text-sm text-gray-400">&lt;strong&gt;Bold text&lt;/strong&gt;</code><br>
+                        <code class="text-sm text-gray-400">&lt;em&gt;Italic text&lt;/em&gt;</code>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-primary-400 font-medium mb-2">Lists</h4>
+                    <div class="bg-dark-800 p-3 rounded-md">
+                        <code class="text-sm text-gray-400">&lt;ul&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;Unordered list item&lt;/li&gt;<br>
+                            &lt;/ul&gt;</code><br>
+                        <code class="text-sm text-gray-400">&lt;ol&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;Ordered list item&lt;/li&gt;<br>
+                            &lt;/ol&gt;</code>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-primary-400 font-medium mb-2">Links</h4>
+                    <div class="bg-dark-800 p-3 rounded-md">
+                        <code class="text-sm text-gray-400">&lt;a href="https://example.com"&gt;Link text&lt;/a&gt;</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
